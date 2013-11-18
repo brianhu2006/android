@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    
+    <string name="app_name">Twenty Four</string>
+    
+    <string name="startGame">Start Game</string>
+    <string name="gameOption">Game Setting</string>
+    <string name="gameModel">Game Model	</string>
+	<string name="rankList">Heroes</string>
+	<string name="btnClear">Clear</string>
+    <string name="btnSubmit">Confirm</string> 
+    <string name="btnAnswer">Get Answer</string>
+	<string name="btnNoAnswer">No Answer</string>
+	<string name="btnNextSub">Next Subject</string>
+	    
+	<string name="lbRightCount">Right:</string>
+	<string name="lbErrorCount">Wrong:</string>
+	
+	<string name="newGame">New Game</string>
+	<string name="pause">Pause</string>
+	<string name="play">Continue</string>
+	<string name="about">About</string>
+	<string name="quit">Quit</string>
+	<string name="reload">Refresh</string>
+	    
+	<string name="lbRemainSub">Subjects Left:</string>
+	<string name="lbRemainTime">Time Left:</string>
+	<string name="lbWasteTime">Time Consume:</string>
+	
+	<string name="appInfo">com.education101</string>    
+	<string name="aboutInfo">
+	               从扑克中任意抽出四张（数字表示为1－13），
+	               用加、减、乘、除的方法使结果成为24，每张牌只能用一次。一副牌（52张）中，
+	               任意抽取4张可有1820种不同组合，其中有458个牌组算不出24点。现在再和别人玩这个游戏，不怕了吧\n
+	               答题的机会只有一次哦.
+	</string>
+</resources>
