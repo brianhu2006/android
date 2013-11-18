@@ -21,23 +21,23 @@ public class AppActivity extends Activity implements OnClickListener{
     
 	private final static String TAG = "NO.24";
 	
-	private Button  btnStartGame;  //开始游戏	
-	private Button  btnRankList;   //游戏排行
-	private Spinner spiGameModel;  //游戏模式
-	private String  gameModel;     //游戏模式值
+	private Button  btnStartGame;  //start Game
+	private Button  btnRankList;   //Player List
+	private Spinner spiGameModel;  //game model
+	private String  gameModel;     //game model
 	
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app);
-        //获取开始游戏按钮并为其注册监听事件
+        //Add listener for start game
         btnStartGame = (Button)findViewById(R.id.btnStartGame);
         btnStartGame.setOnClickListener(this);
-       
-        //获取游戏排行按钮并为其注册监听事件
+     
+        //Add listener for player
         btnRankList = (Button)findViewById(R.id.btnRankList);
         btnRankList.setOnClickListener(this);
         
-        //游戏模式下拉
+        //game model selection
         spiGameModel = (Spinner)findViewById(R.id.spiGameModel);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                 this, R.array.gameModel, android.R.layout.simple_spinner_item);       
@@ -49,7 +49,7 @@ public class AppActivity extends Activity implements OnClickListener{
 					int arg2, long arg3) {				
 				//获取游戏模式		
 				gameModel = spiGameModel.getSelectedItem().toString();
-				Log.i(TAG, "用户选择游戏模式["+gameModel+"]");
+				Log.i(TAG, "Use choose game model["+gameModel+"]");
 			}
 
 			public void onNothingSelected(AdapterView<?> arg0) {
