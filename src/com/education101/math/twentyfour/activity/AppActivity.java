@@ -58,7 +58,7 @@ public class AppActivity extends Activity implements OnClickListener{
         });
     }
 
-    //按钮事件处理
+    //Button Handling
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.btnStartGame:
@@ -72,19 +72,19 @@ public class AppActivity extends Activity implements OnClickListener{
 		}		
 	}
 	
-	//查看排行
+	//Play List
 	private void viewRank() {
 		Intent intent = new Intent();
-		//记得设置这个参数，否则在B中无法关闭整个应用程序
+		//If we haven't setup this parameter, we can't close this activity
 		intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		intent.setClass(AppActivity.this, RankActivity.class);	
 		this.startActivity(intent);
 	}
 
-	//开始游戏
+	//Start Game
 	private void startGame(){		
-		Log.i(TAG,"开始新游戏...");		
-		Log.i(TAG, "选择的游戏模式 >> "+gameModel);
+		Log.i(TAG,"start new game...");		
+		Log.i(TAG, "selected game model>> "+gameModel);
 		Intent intent = new Intent();
 		intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		intent.setClass(AppActivity.this, MainActivity.class);		
