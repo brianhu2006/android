@@ -47,7 +47,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	
 	private final static String TAG = "NO.24";
 	private GameService gameService = new GameServiceImpl();
-	private Game   game;                    //运行中的游戏
+	private Game   game;                    //running game instance
 	//private boolean changedCard = false;
 	//private CalculateThread calThread;    //计算题目答案线程		
 	private AnswerTime ansTimeThread;       //计时线程
