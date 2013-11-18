@@ -47,7 +47,7 @@ public class AppActivity extends Activity implements OnClickListener{
 
 			public void onItemSelected(AdapterView<?> arg0, View arg1,
 					int arg2, long arg3) {				
-				//获取游戏模式		
+				//Retrieve game model list		
 				gameModel = spiGameModel.getSelectedItem().toString();
 				Log.i(TAG, "Use choose game model["+gameModel+"]");
 			}
