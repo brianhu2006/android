@@ -11,7 +11,11 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import  com.education101.math.twentyfour.R;
-
+/**
+ * 
+ * @author hubing
+ *
+ */
 
 public class AppActivity extends Activity implements OnClickListener{
     
