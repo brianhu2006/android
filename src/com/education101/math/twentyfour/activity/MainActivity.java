@@ -50,51 +50,51 @@ public class MainActivity extends Activity implements OnClickListener{
 	private Game   game;                    //running game instance
 	//private boolean changedCard = false;
 	//private CalculateThread calThread;    //计算题目答案线程		
-	private AnswerTime ansTimeThread;       //计时线程
-	private ControlCountDownTimer cdTimer;  //倒计时器
-	private InitTask  initGameTask;         //初始化游戏任务
-	private CalculateTask calTask;          //计算答案任务
+	private AnswerTime ansTimeThread;       //Timer Thread
+	private ControlCountDownTimer cdTimer;  //Countdown Thread
+	private InitTask  initGameTask;         //Initial task
+	private CalculateTask calTask;          //caculate task
 	
 /*	private ImageView firstCard; //第一张卡
 	private ImageView secondCard;//第二张卡
 	private ImageView thirdCard; //第三张卡
 	private ImageView fourCard;  //第四张卡
-*/	private Button btnClear;    //清空
-	private Button btnSubmit;   //确定
-	private Button btnAnswer;   //查看答案
-	private Button btnNoAnswer; //无答案
-	private Button btnNextSub;  //下一题
-	private Button btnFirstNum; //第一个随机数
-	private Button btnSecondNum;//第二个随机数	
-	private Button btnThirdNum; //第三个随机数
-	private Button btnFourNum;  //第四个随机数
-	private Button btnLeftBracket;   //运算符左括号
-	private Button btnRightBracket;  //运算符右括号
-	private Button btnAdd;           //运算符加号
-	private Button btnSubtract;      //运算符减号
-	private Button btnMultiply;      //运算符乘号
-	private Button btnDivide;        //运算符除号
-	private TableRow trRemainTime;   //剩余时间行(控制其是否可见)
-	private TextView remainTime;     //时间模式倒计时
-	private TableRow trRemainSub;    //剩余题目行(控制其是否可见)
-	private TextView remainSubject;  //题目模式剩余题数	
-	private TextView wasteTime;      //耗时
-	private TextView rightSubject;   //做对题数
-	private TextView errorSubject;   //做错题数
-	private EditText inputExp;       //表达式输入框
+*/	private Button btnClear;    //clear
+	private Button btnSubmit;   //Submit
+	private Button btnAnswer;   //CheckAnswer
+	private Button btnNoAnswer; //No Answer
+	private Button btnNextSub;  //Next
+	private Button btnFirstNum; //first num
+	private Button btnSecondNum;//second num
+	private Button btnThirdNum; //third num
+	private Button btnFourNum;  //fourth num
+	private Button btnLeftBracket;   //left bracket
+	private Button btnRightBracket;  //right bracket
+	private Button btnAdd;           //add
+	private Button btnSubtract;      //substract
+	private Button btnMultiply;      //mulipy
+	private Button btnDivide;        //divide
+	private TableRow trRemainTime;   //remain time
+	private TextView remainTime;     //remain time
+	private TableRow trRemainSub;    //remain subjects
+	private TextView remainSubject;  //remain subjects
+	private TextView wasteTime;      //time consumed
+	private TextView rightSubject;   //right answers
+	private TextView errorSubject;   //wrong answer
+	private EditText inputExp;       //answer express
 		
-	private ProgressDialog progressDialog;//等待进度对话框
+	private ProgressDialog progressDialog;//progress dialog
 	
 	//--------------------------------------------------------------------------//
-	//-------------------         Activity事件处理                          ------------------------//
+	//-------------------         Activity Event Handler ------------------------//
 	//--------------------------------------------------------------------------//
 	
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);        
-        //初始化组件
+        //initialize component
         initComponent(); 
-        //禁用软键盘
+        //disable keyboard
         KeyguardManager keyguardManager = (KeyguardManager)getSystemService(KEYGUARD_SERVICE);
 		KeyguardLock keyguardLock = keyguardManager.newKeyguardLock(getPackageName());
         keyguardLock.disableKeyguard();
@@ -143,10 +143,10 @@ public class MainActivity extends Activity implements OnClickListener{
 				item.setIcon(R.drawable.menu_pause);
 				item.setTitle(R.string.pause);
 			}
-			pauseGame();//暂停游戏
+			pauseGame();//Susoend Game
 			break;
 		case R.id.quit:
-			closeApp();//退出程序
+			closeApp();//Quit App
 			break;
 		default:
 			break;
@@ -156,7 +156,7 @@ public class MainActivity extends Activity implements OnClickListener{
 
 
 	//--------------------------------------------------------------------------//
-	//-------------------         界面组件声明/注册回调函数/    ------------------------//
+	//-------------------       Event Handler Register/    ------------------------//
 	//--------------------------------------------------------------------------//
 	
 	//初始化组件
@@ -633,15 +633,15 @@ public class MainActivity extends Activity implements OnClickListener{
 	//--------------------------------------------------------------------------//
 	//-------------------         定义任务和线程处理                             ------------------------//
 	//--------------------------------------------------------------------------//
-	//初始化任务
+	//Initiliaze Task
  	class InitTask extends AsyncTask<Integer,Integer,Subject>{
 
 		protected Subject doInBackground(Integer... params) {
-			Log.i(TAG, "开始初始化游戏...");
-			//获取用户选择的游戏模式
+			Log.i(TAG, "Game initializing...");
+			//Retrieve Game Model
 			Bundle bundle = getIntent().getExtras();
 	        String gameModel = (String)bundle.get("gameModel");	
-	        //创建新游戏
+	        //create game
 	        game = gameService.createGame(gameModel);
 	        //开启新线程开始计算当前题目答案
 	        MainActivity.this.startCalSubThread();//开始计算
