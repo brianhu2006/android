@@ -15,74 +15,93 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        public static final int first=0x7f050000;
-        public static final int second=0x7f050001;
-        public static final int third=0x7f050002;
+        public static final int black=0x7f050001;
+        public static final int blue=0x7f050002;
+        public static final int darkgrey=0x7f050004;
+        public static final int first=0x7f05000b;
+        public static final int grey=0x7f050003;
+        public static final int lightgrey=0x7f050006;
+        public static final int lightransparent=0x7f050008;
+        public static final int mm_btn_text=0x7f05000e;
+        public static final int mm_style_one_btn_text=0x7f05000f;
+        public static final int mm_style_two_btn_text=0x7f050010;
+        public static final int navpage=0x7f05000a;
+        public static final int second=0x7f05000c;
+        public static final int semitransparent=0x7f050007;
+        public static final int third=0x7f05000d;
+        public static final int toasterro=0x7f050005;
+        public static final int transparent=0x7f050009;
+        public static final int white=0x7f050000;
     }
     public static final class drawable {
         public static final int app=0x7f020000;
-        public static final int card_back=0x7f020001;
-        public static final int clb_01=0x7f020002;
-        public static final int clb_02=0x7f020003;
-        public static final int clb_03=0x7f020004;
-        public static final int clb_04=0x7f020005;
-        public static final int clb_05=0x7f020006;
-        public static final int clb_06=0x7f020007;
-        public static final int clb_07=0x7f020008;
-        public static final int clb_08=0x7f020009;
-        public static final int clb_09=0x7f02000a;
-        public static final int clb_10=0x7f02000b;
-        public static final int clb_11=0x7f02000c;
-        public static final int clb_12=0x7f02000d;
-        public static final int clb_13=0x7f02000e;
-        public static final int dnd_01=0x7f02000f;
-        public static final int dnd_02=0x7f020010;
-        public static final int dnd_03=0x7f020011;
-        public static final int dnd_04=0x7f020012;
-        public static final int dnd_05=0x7f020013;
-        public static final int dnd_06=0x7f020014;
-        public static final int dnd_07=0x7f020015;
-        public static final int dnd_08=0x7f020016;
-        public static final int dnd_09=0x7f020017;
-        public static final int dnd_10=0x7f020018;
-        public static final int dnd_11=0x7f020019;
-        public static final int dnd_12=0x7f02001a;
-        public static final int dnd_13=0x7f02001b;
-        public static final int hrt_01=0x7f02001c;
-        public static final int hrt_02=0x7f02001d;
-        public static final int hrt_03=0x7f02001e;
-        public static final int hrt_04=0x7f02001f;
-        public static final int hrt_05=0x7f020020;
-        public static final int hrt_06=0x7f020021;
-        public static final int hrt_07=0x7f020022;
-        public static final int hrt_08=0x7f020023;
-        public static final int hrt_09=0x7f020024;
-        public static final int hrt_10=0x7f020025;
-        public static final int hrt_11=0x7f020026;
-        public static final int hrt_12=0x7f020027;
-        public static final int hrt_13=0x7f020028;
-        public static final int ic_launcher=0x7f020029;
-        public static final int menu_about=0x7f02002a;
-        public static final int menu_new_game=0x7f02002b;
-        public static final int menu_pause=0x7f02002c;
-        public static final int menu_play=0x7f02002d;
-        public static final int menu_quit=0x7f02002e;
-        public static final int menu_reload=0x7f02002f;
-        public static final int spd_01=0x7f020030;
-        public static final int spd_02=0x7f020031;
-        public static final int spd_03=0x7f020032;
-        public static final int spd_04=0x7f020033;
-        public static final int spd_05=0x7f020034;
-        public static final int spd_06=0x7f020035;
-        public static final int spd_07=0x7f020036;
-        public static final int spd_08=0x7f020037;
-        public static final int spd_09=0x7f020038;
-        public static final int spd_10=0x7f020039;
-        public static final int spd_11=0x7f02003a;
-        public static final int spd_12=0x7f02003b;
-        public static final int spd_13=0x7f02003c;
-        public static final int tab_rank_count=0x7f02003d;
-        public static final int tab_rank_time=0x7f02003e;
+        public static final int btn_style_one=0x7f020001;
+        public static final int btn_style_one_disabled=0x7f020002;
+        public static final int btn_style_one_focused=0x7f020003;
+        public static final int btn_style_one_normal=0x7f020004;
+        public static final int btn_style_one_pressed=0x7f020005;
+        public static final int card_back=0x7f020006;
+        public static final int clb_01=0x7f020007;
+        public static final int clb_02=0x7f020008;
+        public static final int clb_03=0x7f020009;
+        public static final int clb_04=0x7f02000a;
+        public static final int clb_05=0x7f02000b;
+        public static final int clb_06=0x7f02000c;
+        public static final int clb_07=0x7f02000d;
+        public static final int clb_08=0x7f02000e;
+        public static final int clb_09=0x7f02000f;
+        public static final int clb_10=0x7f020010;
+        public static final int clb_11=0x7f020011;
+        public static final int clb_12=0x7f020012;
+        public static final int clb_13=0x7f020013;
+        public static final int dnd_01=0x7f020014;
+        public static final int dnd_02=0x7f020015;
+        public static final int dnd_03=0x7f020016;
+        public static final int dnd_04=0x7f020017;
+        public static final int dnd_05=0x7f020018;
+        public static final int dnd_06=0x7f020019;
+        public static final int dnd_07=0x7f02001a;
+        public static final int dnd_08=0x7f02001b;
+        public static final int dnd_09=0x7f02001c;
+        public static final int dnd_10=0x7f02001d;
+        public static final int dnd_11=0x7f02001e;
+        public static final int dnd_12=0x7f02001f;
+        public static final int dnd_13=0x7f020020;
+        public static final int hrt_01=0x7f020021;
+        public static final int hrt_02=0x7f020022;
+        public static final int hrt_03=0x7f020023;
+        public static final int hrt_04=0x7f020024;
+        public static final int hrt_05=0x7f020025;
+        public static final int hrt_06=0x7f020026;
+        public static final int hrt_07=0x7f020027;
+        public static final int hrt_08=0x7f020028;
+        public static final int hrt_09=0x7f020029;
+        public static final int hrt_10=0x7f02002a;
+        public static final int hrt_11=0x7f02002b;
+        public static final int hrt_12=0x7f02002c;
+        public static final int hrt_13=0x7f02002d;
+        public static final int ic_launcher=0x7f02002e;
+        public static final int menu_about=0x7f02002f;
+        public static final int menu_new_game=0x7f020030;
+        public static final int menu_pause=0x7f020031;
+        public static final int menu_play=0x7f020032;
+        public static final int menu_quit=0x7f020033;
+        public static final int menu_reload=0x7f020034;
+        public static final int spd_01=0x7f020035;
+        public static final int spd_02=0x7f020036;
+        public static final int spd_03=0x7f020037;
+        public static final int spd_04=0x7f020038;
+        public static final int spd_05=0x7f020039;
+        public static final int spd_06=0x7f02003a;
+        public static final int spd_07=0x7f02003b;
+        public static final int spd_08=0x7f02003c;
+        public static final int spd_09=0x7f02003d;
+        public static final int spd_10=0x7f02003e;
+        public static final int spd_11=0x7f02003f;
+        public static final int spd_12=0x7f020040;
+        public static final int spd_13=0x7f020041;
+        public static final int tab_rank_count=0x7f020042;
+        public static final int tab_rank_time=0x7f020043;
     }
     public static final class id {
         public static final int about=0x7f090022;
@@ -181,10 +200,16 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f070001;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
+        public static final int AppTheme=0x7f070002;
+        public static final int MMButton=0x7f070003;
+        public static final int MMLineActionButton=0x7f070005;
+        public static final int MMLineButton=0x7f070004;
+        /**  Navigation Header 
+         */
+        public static final int NavPage=0x7f070000;
     }
 }
